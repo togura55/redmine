@@ -1,0 +1,15 @@
+= button_customfield
+
+Description goes here
+Add a checkbox form on the "Custom Field" page enabling button action on the particular custom field.
+
+Install
+- Copy a directory under the redmine\vender\plugins
+- run "rake db:migrate_plugins" at the redmine home
+- run "rake db:migrate RAILS_ENV=production" for intializing Redmine db related configuration, such as re-creating schema.db
+- launch Redmine via Web browser
+
+Uninstall
+- run "rake db:migrate:plugin NAME=redmine_button_customfield version=0"
+- run "ruby script\plugin remove redmine_button_customfield"
+- For the confirmation, run "rake db:migrate_plugins"

@@ -1,0 +1,5 @@
+# English strings go here for Rails i18n
+en:
+  my_label: "マイラベル"
+  field_is_button_customfield: "ボタン カスタムフィールド"
+  button_customfield_label: "ID取得"
