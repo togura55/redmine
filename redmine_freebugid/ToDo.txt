@@ -1,0 +1,16 @@
+\app\views\custom_fields の下に、カスタムフィールド登録時の属性をプルダウンにセットする処理を作成する
+
+\libの下に、hookやhelper_patchを書き足す
+
+ToDo
+projectsの「適用」ボタンのソースコードを探す
+app\views\freebugid_main\index.html.erbにinput, button, captionを含むerbを書く
+
+
+http://tolinux01.global.sdl.corp/redmine01/custom_fields/new?type=IssueCustomField
+カスタムフィールド≫ チケット≫ 新しいカスタムフィールドを作成
+の「書式」プルダウンに、FreeBugIDを追加
+
+新しいDBフィールドをcustom_fieldsに設けるis_freebugid = true/false
+trueならボタン付きのコントロールを表示する
+
