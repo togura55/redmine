@@ -20,7 +20,7 @@ module ButtonCustomfieldIssuePatch
     #
     def button_customfield_status
     
-       logger.debug ("product_id = #{self.project_id.to_s}, id = #{self.project_id.id}")
+ #      logger.debug ("product_id = #{self.project_id.to_s}, id = #{self.project_id.id}")
        @project = Project.find(self.project_id.id)
        @custom_fields_project = @project.custom_fields_projects
        

@@ -38,11 +38,11 @@ module ButtonCustomfieldCustomFieldsHelperPatch
 #	custom_field = CustomField.find_by_id(cfv.custom_field_id)
 
         if custom_value.custom_field.is_button_customfield then
-#           button = button_to(I18n.t('button_customfield_label'), :controller => 'issues', :action => 'index')
-           button = button_to(I18n.t('button_customfield_label'), :controller => 'issues', :class => 'issue', :action => 'button')
+#           button = button_to(I18n.t('button_customfield_label'), :controller => 'issues', :action => 'button')
+           button = submit_tag(I18n.t('button_customfield_label'), :controller => 'issues', :action => 'button')
 	end
 	
-	custom_field_label_tag(name, custom_value) + custom_field_tag(name, custom_value) + button
+	custom_field_label_tag(name, custom_value) + custom_field_tag(name, custom_value) +  button 
 
 
 #      if custom_value.custom_field.color_customfield_id == 1 then
