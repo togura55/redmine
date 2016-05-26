@@ -1,0 +1,25 @@
+= float_save
+
+Description goes here
+A popup dialog is shown up when a user double-click on the new ticket page. A dialog window contains create, create_continue and preview buttons.
+
+Install
+- Confirm "redmine_custom_view" plugin were/will be installed on the target system.
+- Create a user custom field titled "enable_floatsave" with check-box UI on the administrator setting page by login the admin privilege to Redmine system
+- Copy a directory under the "redmine/plugins" (for Redmine 1.4 and before, "redmine/vender/plugins")
+- run "rake redmine:plugins:migrate RAILS_ENV=production" at the redmine home (for Redmine 1.4 and before, "rake db:migrate_plugins")
+- run "rake db:migrate RAILS_ENV=production" for intializing Redmine db related configuration, such as re-creating schema.db
+- restart Redmine
+- launch Redmine via Web browser
+- Enable the "enable_floating" checkbox shown in the "My account" settings page.
+Uninstall
+- run "rake redmine:plugins:migrate NAME=redmine_float_save VERSION=0 RAILS_ENV=production" (for Redmine 1.4 and before, "rake db:migrate:plugin NAME=redmine_fload_save VERSION=0")
+- rm -rf plugins/redmine_float_save (for Redmine 1.4 and before, "run ruby script/plugin remove redmine_float_save")
+- restart Redmine
+
+Dependencies
+- Required to install "redmine_custom_view" rev. #382 or later in advance. 
+
+Notes
+- This plugin replaces an original source file ".../app/views/issues/_form.html.erb" to the private one. If there are another plugins acting the same replacement of "_form.html.erb" file, a conflicting issue will be occured. A file "redmine_float_save/app/views/issues/_form.html.erb.debug" is provided for the purpose of debugging and/or executing this plugin without any dependency case on the target system. Delete ".debug" suffix when using this file in activate in case.
+

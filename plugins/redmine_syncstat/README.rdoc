@@ -1,0 +1,15 @@
+= redmine_syncstat
+
+Description
+Add a checkbox form on the "Custom Field" page enabling synchronize value from child to the parent issue.
+
+Install
+- Copy a directory under the "redmine/plugins" (for Redmine 1.4 and before, "redmine/vender/plugins")
+- run "rake redmine:plugins:migrate RAILS_ENV=production" at the redmine home (for Redmine 1.4 and before, "rake db:migrate_plugins")
+- restart Redmine
+- launch Redmine via Web browser
+
+Uninstall
+- run "rake redmine:plugins:migrate NAME=redmine_syncstat VERSION=0 RAILS_ENV=production" (for Redmine 1.4 and before, "rake db:migrate:plugin NAME=redmine_syncstat version=0")
+- rm -rf plugins/redmine_syncstat (for Redmine 1.4 and before, "run ruby script/plugin remove redmine_syncstat")
+- restart Redmine

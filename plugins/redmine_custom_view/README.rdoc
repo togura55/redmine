@@ -1,0 +1,24 @@
+= redmine_custom_view
+
+Description
+Show hide issue fields and count title characters in following trackers
+ ------------------------
+ Tracker# | Tracker Name
+ ---------+--------------
+        9 | QARepDB
+       13 | Bug_Regression
+       15 | Environment
+
+Install
+- Copy a directory under the "redmine/plugins" (for Redmine 1.4 and before, "redmine/vender/plugins")
+- run "rake redmine:plugins:migrate RAILS_ENV=production" at the redmine home (for Redmine 1.4 and before, "rake db:migrate_plugins")
+- run "rake db:migrate RAILS_ENV=production" for intializing Redmine db related configuration, such as re-creating schema.db
+- restart Redmine
+- launch Redmine via Web browser
+- Edit MySQL database as setting 1 for adopting trackers in table trackesr\is_hide_qarepdbc and trackers\is_hide_environment. For example, if you want to make tracker effective as QARepDBc's UI for tracker_id 9, 13 and 15, setting 1 for tracker\is_hide_qarepdbc tabele in each id of the databse by manually.
+
+Uninstall
+- run "rake redmine:plugins:migrate NAME=redmine_custom_view VERSION=0 RAILS_ENV=production" (for Redmine 1.4 and before, "rake db:migrate:plugin NAME=redmine_custom_view version=0")
+- rm -rf plugins/redmine_custom_view (for Redmine 1.4 and before, "run ruby script/plugin remove redmine_custom_view")
+- restart Redmine
+

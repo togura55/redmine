@@ -1,0 +1,16 @@
+= extended_fields
+
+Description
+Add Hint and Wiki attibute to the custom field 
+
+Install
+- Copy a directory under the redmine\vender\plugins (for Redmine 3.0.2 env. "redmine/plugins")
+- run "rake db:migrate_plugins" at the redmine home (for some of Linux env. "rake redmine:plugins:migrate RAILS_ENV=production")
+- run "rake db:migrate RAILS_ENV=production" for intializing Redmine db related configuration, such as re-creating schema.db
+- launch Redmine via Web browser
+
+Uninstall
+- run "rake db:migrate:plugin NAME=extended_fieldsd version=0"
+- run "ruby script\plugin remove extended_fields"
+- For the confirmation, run "rake db:migrate_plugins"
+

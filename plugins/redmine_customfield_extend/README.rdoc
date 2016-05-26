@@ -1,0 +1,14 @@
+= redmine_customfield_extend
+
+Description
+Change the number of lines for the particular custom field
+
+Install
+- Copy a directory under the redmine\vender\plugins (for Redmine 3.0.2 env. "redmine/plugins")
+- restart Redmine
+- launch Redmine via Web browser
+
+Uninstall
+- run "ruby script/plugin remove redmine_customfield_extend" (for the Redmine 3.0.2 env. "rm -rf plugins/redmine_customfield_extend", instead)
+- restart Redmine
+

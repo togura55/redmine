@@ -1,0 +1,8 @@
+# ES translations for Ruby on Rails
+
+
+es:
+  field_category: Product
+  field_fixed_version: Product Version
+  field_subject: Title
+

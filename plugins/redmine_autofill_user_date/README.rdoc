@@ -1,0 +1,13 @@
+= redmine_autofill_user_date
+
+Description
+Add opened-by and date information automatically when a ticket is saved.
+
+Install
+- Copy a directory under the redmine/vender/plugins (for Redmine 3.0.2 env. "redmine/plugins")
+- restart Redmine
+- launch Redmine via Web browser
+
+Uninstall
+- run "ruby script/plugin remove redmine_autofill_user_date" (for the Redmine 3.0.2 env. "rm -rf plugins/redmine_autofill_user_date", instead)
+- restart Redmine

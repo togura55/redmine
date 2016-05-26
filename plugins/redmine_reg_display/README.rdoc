@@ -1,0 +1,16 @@
+= redmine_reg_display
+
+Description
+Display a linl of "add regression ticket" on the issues UI and navigate to the "Bug_Regression" tracker ticket.
+
+Install:
+- Copy a directory under the redmine\vender\plugins (for Redmine 3.0.2 env. "redmine/plugins")
+- run "rake db:migrate_plugins" at the redmine home (for some of Linux env. "rake redmine:plugins:migrate RAILS_ENV=production")
+- run "rake db:migrate RAILS_ENV=production" for intializing Redmine db related configuration, such as re-creating schema.db
+- launch Redmine via Web browser
+
+Uninstall:
+- run "rake db:migrate:plugin NAME=redmine_reg_display version=0"
+- run "ruby script\plugin remove redmine_reg_display"
+- For the confirmation, run "rake db:migrate_plugins"
+

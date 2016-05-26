@@ -1,0 +1,10 @@
+# Japanese strings go here for Rails i18n
+ja:
+  field_color_customfield: 表示カラー
+  my_label: マイラベル
+
+  color_green: 緑
+  color_blue: 青
+  color_yellow: 黄
+  color_pink: 桃
+  color_orange: 橙

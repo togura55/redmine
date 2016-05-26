@@ -1,0 +1,4 @@
+# Japanese strings go here for Rails i18n
+ja:
+  label_float_save: "フロート セーブ"
+  field_enable_floatsave: "フロート セーブ有効"

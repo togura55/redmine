@@ -1,0 +1,15 @@
+= redmine_lang_change
+
+Description
+Making UI language strings change provided by yml files. "Product" and "Product Version" are forced to be set in English as is.
+
+Install
+- Copy a directory under the redmine\vender\plugins (for Redmine 3.0.2 env. "redmine/plugins")
+- run "rake db:migrate_plugins" at the redmine home (for some of Linux env. "rake redmine:plugins:migrate RAILS_ENV=production")
+- run "rake db:migrate RAILS_ENV=production" for intializing Redmine db related configuration, such as re-creating schema.db
+- launch Redmine via Web browser
+
+Uninstall
+- run "rake db:migrate:plugin NAME=redmine_lang_change version=0"
+- run "ruby script\plugin remove redmine_lang_change"
+- For the confirmation, run "rake db:migrate_plugins"

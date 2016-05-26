@@ -1,0 +1,11 @@
+<% unless $childticket_qarepdbc.blank? %>
+<% if  $childticket_qarepdbc.include?(@issue.tracker.id)%> 	
+<hr />
+<div class="contextual">
+	<%= link_to(l(:button_add_Regression), new_project_issue_path(issue.project, :issue => {:tracker_id => issue.tracker, :parent_issue_id => issue, :regression => true})) %>
+</div>
+<p><strong><%=l(:label_add_regression)%></strong></p>
+
+
+<% end %>
+<% end %>

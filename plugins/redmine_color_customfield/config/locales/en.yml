@@ -1,0 +1,10 @@
+# English strings go here for Rails i18n
+en:
+  field_color_customfield: "Color"
+  my_label: "My label"
+
+  color_green: Green
+  color_blue: Blue
+  color_yellow: Yellow
+  color_pink: Pink
+  color_orange: Orange

@@ -1,0 +1,14 @@
+= Redmine Logs Plugin
+
+Description
+This is a plugin for Redmine which lets you download log files of Redmine from administration page.
+
+Install
+- Copy a directory under the redmine/vender/plugins (for the Redmine 3.0.2 env. "redmine/plugins")
+- restart Redmine
+
+Uninstall
+- run "ruby script\plugin remove extended_fields" (for the Redmine 3.0.2 env. "rm -rf plugins/extended_fields", instead)
+- restart Redmine
+
+

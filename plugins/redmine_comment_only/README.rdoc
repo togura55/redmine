@@ -1,0 +1,13 @@
+= comment_only
+
+Description goes here
+Only comments are displayed at issue's history, status changes are not displayed. If you want to display all history of issue, you can do it by click "display all history".
+
+Install
+- Copy a directory under the redmine/vender/plugins (for Redmine 3.0.2 env. "redmine/plugins")
+- restart Redmine
+- launch Redmine via Web browser
+
+Uninstall
+- run "ruby script/plugin remove redmine_comment_only" (for the Redmine 3.0.2 env. "rm -rf plugins/redmine_comment_only", instead)
+- restart Redmine
